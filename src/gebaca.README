@@ -1,0 +1,44 @@
+
+	GEBACA - The Corporate Logo Shooting Game
+		by Pat Autilio
+
+To whom it may concern:
+
+	Gebaca source consists of:
+		gebaca.6 - manual page
+		Makefile - May be used for making blit or dmd objects,
+				stand-alone or under layers
+		playdefs.h - a gebaca header file
+		*.c - many source files
+		
+The source as it stands today is slightly different than the source
+that was used to make the original version of Gebaca that went to the
+world. In particular, up to 5 of your extra men can get bored now
+and start moving around the screen (as opposed to the original 1).
+If you loathe this idea, simply change EXMAX in playdefs.h from 5 to
+1.
+
+The only other change I remember making is that my identity now
+appears somewhere in the game. Can you find it (without perusing the
+source)?
+
+To the best of my knowledge the highest score ever attained with the
+original Gebaca was ~1.3 million by Andy Hume. Others have done
+better by using the SET-UP key on a blit to freeze the game, move
+out of trouble and then continue. I call that cheating. Anyway this
+slightly newer gebaca is somewhat harder so high scores cannot be
+equated anyway. Nonetheless, I'm always interested to hear if some
+lunatic has a new high score.
+
+Enhancements to gebaca are henceforth encouraged. Please send all
+interesting modifications to me for possible inclusion in a
+potential "Gebaca+". As you may have guessed, as it currently
+stands, gebaca uses up all of the processor that it can and still
+slows down when there are many things on the screen. Therefore, any
+enhancements to the game should not add many more moving objects,
+better to add new behaviors to the objects already there or add a
+single new object.
+Warning: There a some serious spaghetti in there in attempts to make
+gebaca run as fast as possible. Have fun!
+
+					Pat Autilio

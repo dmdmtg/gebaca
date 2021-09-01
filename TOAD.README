@@ -1,0 +1,115 @@
+The source code for the tool "gebaca" is contained in the file
+gebaca00.  To unpack and uncrypt this file, execute the 
+following:
+
+crypt key < gebaca00 | cpio -icdv 
+
+where the encryption key that you supplied to TOAD is entered
+for key.
+
+This will produce the following directories: 
+
+src/		doc/
+
+The directory src contains the following files:
+
+Makefile	exit_game.c	ibm.c		mac.c		playdefs.h
+atan3.c		explode.c	init_game.c	me.c		playdisp.c
+bll.c		extra.c		init_round.c	mtv.c		player.c
+bob.c		gab.c		init_scr.c	note.c		shot.c
+chunks.c	gebaca.README	isallin.c	objXobj.c	smurf.c
+digits.c	gebaca.b	itoa.c		objutils.c	sqrt.c
+eddie.c		globals.c	killplayer.c	perchoose.c	srvmouse.c
+error.c
+
+The directory doc contains the following directories:
+
+fmt/		unfmt/
+
+The directory fmt contains the following file:
+
+gebaca.6
+
+The directory unfmt contains the following file:
+
+gebaca.6
+
+File Sizes:
+===========
+
+The following is output from "wc" and can be checked against
+the files you received:
+
+Dir: src
+              205    689   4997 Makefile
+               84    270   1417 atan3.c
+              285    653   5718 bll.c
+              202    542   4504 bob.c
+              301    639   6812 chunks.c
+              359    565   4989 digits.c
+              122    320   2584 eddie.c
+              118    358   2452 error.c
+               86    273   1850 exit_game.c
+               45    122   1014 explode.c
+              165    407   3541 extra.c
+              103    282   2170 gab.c
+               44    319   1814 gebaca.README
+               85    313   2174 globals.c
+              169    441   3659 ibm.c
+              163    499   3868 init_game.c
+               37    109    689 init_round.c
+              126    373   2778 init_scr.c
+               29     87    665 isallin.c
+               30    102    591 itoa.c
+               72    196   1356 killplayer.c
+              133    373   2658 mac.c
+               81    196   1491 me.c
+              199    519   3974 mtv.c
+              121    290   2442 note.c
+               68    244   1713 objXobj.c
+               76    206   1541 objutils.c
+               85    243   1936 perchoose.c
+              318   1272   7812 playdefs.h
+               91    252   1702 playdisp.c
+              326    979   6850 player.c
+              143    352   2705 shot.c
+              128    332   2698 smurf.c
+               35    115    635 sqrt.c
+               24     57    427 srvmouse.c
+Dir: doc/unfmt
+              109    812   4347 gebaca.6
+Dir: doc/fmt
+              198    769   6431 gebaca.6
+
+INSTALLATION INSTRUCTIONS
+===========================
+
+This section outlines the steps needed to install "gebaca" on an AT&T
+3B20 computer running UNIX(TM) System 5 Release 2.  Installation on
+other machines may differ and is the responsiblity of the installer
+to reconcile.
+
+Prerequisites:
+	This package requires the following facilities to
+	be available on your machine, before installation and use:
+		DMD Development Facility
+
+To read before installing:
+	After unbundling, please scan the documentation and any
+	included README files.  These will contain useful infor-
+	mation needed to build the product.
+
+To make the source:
+	Execute:
+		make
+
+	and wait a while.
+
+To create the documentation:
+	The documents, if requested in nroff format, can be created
+	by issuing the following commands:
+
+		nroff -man gebaca.6 | col >gebaca.M
+
+If you have any problems, contact the TOC (201) 870-7944,
+7952, Cornet 266-7944, 7952 or through mail at homxb!gtoad.
